@@ -25,5 +25,14 @@ describe "Romanizer" do
 	it 'romanizes 2400' do
 		expect(romanizes(2400)).to eq 'MMCD'
 	end
+	it 'romanizes 2490' do
+		expect(romanizes(2490)).to eq 'MMCDXC'
+	end
+	it 'romanizes 2990' do
+		expect(romanizes(2990)).to eq 'MMCMXC'
+	end
+	it 'romanizes 2350' do
+		expect(romanizes(2350)).to eq 'MMCCCL'
+	end
 
 end

@@ -18,13 +18,34 @@ def romanizes(number)
 
 	if(test >= 400)
 		result += 'CD'
-		test -= 900
+		test -= 400
 	end
 
 	while(test >= 100)
 		test -= 100
 		result += 'C'
 	end
+
+	if(test >= 90)
+		result += 'XC'
+		test -= 90
+	end
+
+	if(test >= 50)
+		test -= 50
+		result += 'L'
+	end
+
+	if(test >= 40)
+		result += 'XL'
+		test -= 40
+	end
+	while(test >= 10)
+		test -= 10
+		result += 'X'
+	end
+	
+
 	if(number == 1)
 		result = 'I'
 	elsif (number == 5)
