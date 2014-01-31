@@ -34,5 +34,11 @@ describe "Romanizer" do
 	it 'romanizes 2350' do
 		expect(romanizes(2350)).to eq 'MMCCCL'
 	end
+	it 'romanizes 2358' do
+		expect(romanizes(2358)).to eq 'MMCCCLVIII'
+	end
+	it 'romanizes 3003' do
+		expect(romanizes(3003)).to eq 'MMMIII'
+	end
 
 end

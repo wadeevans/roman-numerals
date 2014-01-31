@@ -45,6 +45,24 @@ def romanizes(number)
 		result += 'X'
 	end
 	
+	if(test >= 9)
+		result += 'IX'
+		test -= 9
+	end
+
+	if(test >= 5)
+		test -= 5
+		result += 'V'
+	end
+
+	if(test >= 4)
+		result += 'IV'
+		test -= 4
+	end
+	while(test >= 1)
+		test -= 1
+		result += 'I'
+	end
 
 	if(number == 1)
 		result = 'I'
